@@ -1,8 +1,8 @@
-package main
+package controlstructures
 
 import "fmt"
 
-func main() {
+func testSwitch() {
 	a := 10
 	switch a {
 	case 1:

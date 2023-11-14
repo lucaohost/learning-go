@@ -1,8 +1,8 @@
-package main
+package loops
 
 import "fmt"
 
-func main() {
+func testWhile() {
 	a := 0
 	for a < 4 {
 		fmt.Println(a)

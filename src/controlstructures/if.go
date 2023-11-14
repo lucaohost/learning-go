@@ -1,8 +1,8 @@
-package main
+package controlstructures
 
 import "fmt"
 
-func main() {
+func testIf() {
 	a := 5
 	if a < 0 {
 		fmt.Println("Your value is negative!")
