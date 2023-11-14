@@ -1,11 +1,11 @@
-package main
+package basicdatatypes
 
 import (
 	"fmt"
 	"strings"
 )
 
-func main() {
+func testStrings() {
 	s := "I'm a string"
 	fmt.Printf("End with string? %v\n", strings.HasSuffix(s, "string"))
 }

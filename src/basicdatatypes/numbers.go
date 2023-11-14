@@ -1,8 +1,8 @@
-package main
+package basicdatatypes
 
 import "fmt"
 
-func main() {
+func testNumbers() {
 	i := 100
 	var j int = 1234
 	fmt.Printf("%v + %v = %v\n", i, j, i+j)

@@ -1,8 +1,8 @@
-package main
+package basicdatatypes
 
 import "fmt"
 
-func main() {
+func testBooleans() {
 	a := true
 	b := false
 	fmt.Printf("a = %v, b = %v, and a == b = %v\n", a, b, a == b)
