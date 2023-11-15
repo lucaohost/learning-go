@@ -5,6 +5,7 @@ import (
 
 	"github.com/lucaohost/learning-go/src/basicdatatypes"
 	"github.com/lucaohost/learning-go/src/controlstructures"
+	"github.com/lucaohost/learning-go/src/errorsTesting"
 	"github.com/lucaohost/learning-go/src/loops"
 	"github.com/lucaohost/learning-go/src/mathutils"
 )
@@ -22,4 +23,7 @@ func main() {
 	loops.TestLoop()
 	loops.TestRange()
 	loops.TestWhile()
+	println("=============================================\n")
+	errorsTesting.TestErrors()
+	println("\n=============================================")
 }
