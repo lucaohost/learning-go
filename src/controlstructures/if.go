@@ -2,7 +2,7 @@ package controlstructures
 
 import "fmt"
 
-func testIf() {
+func TestIf() {
 	a := 5
 	if a < 0 {
 		fmt.Println("Your value is negative!")

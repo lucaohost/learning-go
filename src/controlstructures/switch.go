@@ -2,7 +2,7 @@ package controlstructures
 
 import "fmt"
 
-func testSwitch() {
+func TestSwitch() {
 	a := 10
 	switch a {
 	case 1:

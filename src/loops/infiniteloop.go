@@ -5,9 +5,10 @@ import (
 	"time"
 )
 
-func testInfiniteLoop() {
+func TestInfiniteLoop() {
 	for {
 		fmt.Println("Tick")
 		time.Sleep(1 * time.Second)
+		break
 	}
 }
