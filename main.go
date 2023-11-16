@@ -9,6 +9,7 @@ import (
 	"github.com/lucaohost/learning-go/src/loops"
 	"github.com/lucaohost/learning-go/src/mapsTest"
 	"github.com/lucaohost/learning-go/src/mathutils"
+	"github.com/lucaohost/learning-go/src/methodstest"
 	"github.com/lucaohost/learning-go/src/pointers"
 	"github.com/lucaohost/learning-go/src/slicesTest"
 	"github.com/lucaohost/learning-go/src/structures"
@@ -52,7 +53,10 @@ func main() {
 	}
 	fmt.Println(coordinate)
 	slicesTest.TestSlices()
-	println("=============================================\n")
 	mapsTest.TestMaps()
+	println("=============================================\n")
+	p2 := methodstest.NewPerson("Lucas", "Reginatto", 1990, 10, 10)
+	fmt.Println(p2.SayHello())
+	fmt.Println(p2.GetAge())
 	println("\n=============================================")
 }
