@@ -8,7 +8,7 @@ import (
 func TestInfiniteLoop() {
 	for {
 		fmt.Println("Tick")
-		time.Sleep(1 * time.Second)
+		time.Sleep(1 * time.Nanosecond)
 		break
 	}
 }

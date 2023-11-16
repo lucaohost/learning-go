@@ -9,6 +9,7 @@ import (
 	"github.com/lucaohost/learning-go/src/loops"
 	"github.com/lucaohost/learning-go/src/mathutils"
 	"github.com/lucaohost/learning-go/src/pointers"
+	"github.com/lucaohost/learning-go/src/slicesTest"
 	"github.com/lucaohost/learning-go/src/structures"
 )
 
@@ -41,7 +42,6 @@ func main() {
 		},
 	}
 	fmt.Println(p)
-	println("=============================================\n")
 	coordinate := struct {
 		X int
 		Y int
@@ -50,5 +50,7 @@ func main() {
 		Y: 20,
 	}
 	fmt.Println(coordinate)
+	println("=============================================\n")
+	slicesTest.TestSlices()
 	println("\n=============================================")
 }
