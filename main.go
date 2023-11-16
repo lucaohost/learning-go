@@ -8,6 +8,7 @@ import (
 	"github.com/lucaohost/learning-go/src/errorsTesting"
 	"github.com/lucaohost/learning-go/src/loops"
 	"github.com/lucaohost/learning-go/src/mathutils"
+	"github.com/lucaohost/learning-go/src/pointers"
 )
 
 func main() {
@@ -23,7 +24,8 @@ func main() {
 	loops.TestLoop()
 	loops.TestRange()
 	loops.TestWhile()
-	println("=============================================\n")
 	errorsTesting.TestErrors()
+	println("=============================================\n")
+	pointers.TestPointers()
 	println("\n=============================================")
 }
