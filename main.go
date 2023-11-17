@@ -6,9 +6,11 @@ import (
 	"github.com/lucaohost/learning-go/src/basicdatatypes"
 	"github.com/lucaohost/learning-go/src/controlstructures"
 	"github.com/lucaohost/learning-go/src/errorsTesting"
+	"github.com/lucaohost/learning-go/src/interfacetest"
 	"github.com/lucaohost/learning-go/src/loops"
 	"github.com/lucaohost/learning-go/src/mapsTest"
 	"github.com/lucaohost/learning-go/src/mathutils"
+	"github.com/lucaohost/learning-go/src/methodstest"
 	"github.com/lucaohost/learning-go/src/pointers"
 	"github.com/lucaohost/learning-go/src/slicesTest"
 	"github.com/lucaohost/learning-go/src/structures"
@@ -52,7 +54,23 @@ func main() {
 	}
 	fmt.Println(coordinate)
 	slicesTest.TestSlices()
-	println("=============================================\n")
 	mapsTest.TestMaps()
+	p2 := methodstest.NewPerson("Lucas", "Reginatto", 1990, 10, 10)
+	fmt.Println(p2.SayHello())
+	fmt.Println(p2.GetAge())
+	println("=============================================\n")
+	circle := &interfacetest.Circle{
+		Radius: 10,
+	}
+	retangle := &interfacetest.Retangle{
+		Width:  10,
+		Height: 10,
+	}
+	PrintArea(circle)
+	PrintArea(retangle)
 	println("\n=============================================")
+}
+
+func PrintArea(shape interfacetest.Shape) {
+	fmt.Print(shape.Area(), "\n")
 }
