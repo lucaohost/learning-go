@@ -1,0 +1,15 @@
+package: .
+import:
+- package: github.com/lucaohost/learning-go
+  subpackages:
+  - src/basicdatatypes
+  - src/controlstructures
+  - src/errorsTesting
+  - src/interfacetest
+  - src/loops
+  - src/mapsTest
+  - src/mathutils
+  - src/methodstest
+  - src/pointers
+  - src/slicesTest
+  - src/structures
