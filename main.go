@@ -14,6 +14,8 @@ import (
 	"github.com/lucaohost/learning-go/src/pointers"
 	"github.com/lucaohost/learning-go/src/slicesTest"
 	"github.com/lucaohost/learning-go/src/structures"
+	"golang.org/x/sys/unix"
+	"unicode/utf8"
 )
 
 type Person = structures.Person
@@ -58,7 +60,6 @@ func main() {
 	p2 := methodstest.NewPerson("Lucas", "Reginatto", 1990, 10, 10)
 	fmt.Println(p2.SayHello())
 	fmt.Println(p2.GetAge())
-	println("=============================================\n")
 	circle := &interfacetest.Circle{
 		Radius: 10,
 	}
@@ -68,9 +69,23 @@ func main() {
 	}
 	PrintArea(circle)
 	PrintArea(retangle)
+	fmt.Println(GetUserId())
+	println("=============================================\n")
+	testRunes()
 	println("\n=============================================")
 }
 
 func PrintArea(shape interfacetest.Shape) {
 	fmt.Print(shape.Area(), "\n")
+}
+
+func GetUserId() int {
+	return unix.Getuid()
+}
+
+func testRunes() {
+	minhaString := "résumé"
+    numeroDeCaracteres := utf8.RuneCountInString(minhaString)
+	fmt.Printf("Número de bytes na string: %d\n", len(minhaString))
+    fmt.Printf("Número de caracteres na string: %d\n", numeroDeCaracteres)
 }

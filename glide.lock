@@ -1,0 +1,22 @@
+hash: fb83f8ac34d0bb5d52b4fbf53cc924b7dc10b6a20b7208d7286583f749be3082
+updated: 2023-11-28T01:19:56.531539156-03:00
+imports:
+- name: github.com/lucaohost/learning-go
+  version: 06f27c68cc88a978079fc73595bda18813ced574
+  subpackages:
+  - src/basicdatatypes
+  - src/controlstructures
+  - src/errorsTesting
+  - src/interfacetest
+  - src/loops
+  - src/mapsTest
+  - src/mathutils
+  - src/methodstest
+  - src/pointers
+  - src/slicesTest
+  - src/structures
+- name: golang.org/x/sys
+  version: 13b15b780d9013988b1fb0e79e30b2528a877638
+  subpackages:
+  - unix
+testImports: []
